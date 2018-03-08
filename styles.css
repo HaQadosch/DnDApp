@@ -1,0 +1,60 @@
+:root {
+  --red: #c87041;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+header{
+  text-align:            center;
+  background-image:      url("https://cdn.glitch.com/5a96bac8-beb1-4890-9010-f05a1dc58d47%2FPHB_600x338.jpg?1520423921066"),
+                         url("https://cdn.glitch.com/5a96bac8-beb1-4890-9010-f05a1dc58d47%2Fdungeons_and_dragons_40_ampersand_flat.png?1520423915834");
+  background-size:       600px 338px, 250px 241px;
+  background-position:   center, center;
+  background-repeat:     no-repeat;
+  background-color:      white;
+  background-blend-mode: screen, multiply;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+main {
+  align-self: center;
+  width: 250px;
+  flex-grow: 1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+input#email {
+  border: none;
+  border-bottom: 1px solid var(--red);
+  height: 25px;
+  font-size: 1.2em;
+  align-self: stretch;
+}
+input::placeholder{
+  color: grey;
+}
+
+input[type=submit] {
+  align-self: flex-start;
+  border: none;
+  background: none;
+  color: var(--red);
+  font-size: 1.5em;
+}
